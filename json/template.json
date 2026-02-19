@@ -1,0 +1,37 @@
+{
+    // general setting
+    "general": {
+        "path_data": "",
+        "path_output_folder": "",
+        "num_splits": 1,
+        "fraction_test": 50,
+        "kfold_seed": 142,
+        "export": false, // [ false, true ]
+        "RB": "POD", // "POD",
+        "SS": "wOMP", // "wOMP",
+        "time_rieszReps": 0,
+        "norm_rieszReps": "H1" // [ "H1", "L2" ]
+    },
+    "algebra": {
+        "run_type": "par", // [ "par", "seq" ]
+        "permutation": "P" // [ "I", "P" ]
+    },
+    "noise": {
+        "type": "NONE", // [ "NONE", "LD", "SNR" ]
+        "seed": 0,
+        "num_random_runs": 1,
+        "SNR": 0.1,
+        "LD": 0.1,
+        "NONE": 0.,
+        "xi": 0.
+    },
+    "SS": {
+        "wOMP": {
+            "H": 10,
+            "beta_0": 0.1,
+            "seed": 156,
+            "sensor_dim": 3, // [ 2 , 3 ] dimensionality of RRs
+            "threshold": 1e-4
+        }
+    }
+}
